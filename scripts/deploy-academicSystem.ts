@@ -31,9 +31,6 @@ async function main() {
     gasLimit: gasLimit
   });
 
-  console.log("├── Transaction hash:", taskManager.deploymentTransaction()?.hash);
-  console.log("├── Waiting for deployment confirmation...");
-
   // Wait for deployment
   await taskManager.waitForDeployment();
   const contractAddress = await taskManager.getAddress();
