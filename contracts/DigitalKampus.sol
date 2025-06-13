@@ -2,7 +2,7 @@
 
 pragma solidity >=0.8.2 <0.9.0;
 
-contract digitalKampus {
+contract DigitalKampus {
     //storage , memory , call data
 
     mapping(address => uint256) public balances;
